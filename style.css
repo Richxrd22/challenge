@@ -1,0 +1,16 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --main-bg-color: #0A3871;
+}
+
+header {
+    display: inline-block;
+}
+
+header img {
+    margin-left: 40px;
+    margin-top: 40px;
+}
