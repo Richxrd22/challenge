@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <h1><img src="imagenes/Logo.png" alt="Logo Alura"></h1>
@@ -14,27 +18,29 @@
     <main class="contenedor">
         <section class="caja-input">
             <textarea placeholder="Ingrese el texto aqui" class="input-encriptar" id="textoEncriptar"></textarea>
-            <p class="texto-aviso"><img src="images/bi_exclamation-circle-fill.png" alt="exclamation-symbol">Solo letras minúsculas y sin acentos</p>
+            <p class="texto-aviso"><img src="imagenes/bi_exclamation-circle-fill.png" alt="exclamation-symbol">Solo letras
+                minúsculas y sin acentos</p>
             <div class="option-row">
-                <input type="submit" value="Encriptar!" class="encriptar" >
+                <input type="submit" value="Encriptar!" class="encriptar">
                 <input type="submit" value="Desencriptar!" class="desencriptar">
             </div>
         </section>
-        <section >
+        <section>
             <div class="caja-output">
                 <div id="vistaError">
-                    <img src="images/Muñeco.png" alt="imagen de error descriptiva">
-                    <div class="Mensaje-error">   
+                    <img src="imagenes/Muñeco.png" alt="imagen de error descriptiva">
+                    <div class="Mensaje-error">
                         <h2>Ningún mensaje fue encontrado</h2>
                         <p>Ingresa el texto que desees encriptar o desencriptar.</p>
                     </div>
                 </div>
                 <div id="vistaResultado">
                     <textarea disabled class="output-resultado" id="resultadoEncriptar"></textarea>
-                    <button class="copiar"  >Copiar!</button>
+                    <button class="copiar">Copiar!</button>
                 </div>
             </div>
         </section>
     </main>
 </body>
+
 </html>
