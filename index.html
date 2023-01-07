@@ -21,8 +21,8 @@
             <p class="texto-aviso"><img src="imagenes/bi_exclamation-circle-fill.png" alt="exclamation-symbol">Solo letras
                 minúsculas y sin acentos</p>
             <div class="option-row">
-                <input type="submit" value="Encriptar!" class="encriptar">
-                <input type="submit" value="Desencriptar!" class="desencriptar">
+                <input type="submit" value="Encriptar!" class="encriptar" onclick="Encriptar()">
+                <input type="submit" value="Desencriptar!" class="desencriptar" onclick="Desencriptar()">
             </div>
         </section>
         <section>
@@ -36,11 +36,13 @@
                 </div>
                 <div id="vistaResultado">
                     <textarea disabled class="output-resultado" id="resultadoEncriptar"></textarea>
-                    <button class="copiar">Copiar!</button>
+                    <button class="copiar" onclick="copiar()">Copiar!</button>
                 </div>
             </div>
         </section>
     </main>
+    <script src="encriptacion.js">
+    </script>
 </body>
 
 </html>
