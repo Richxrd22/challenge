@@ -76,3 +76,59 @@ header img {
     background: #D8DFE8;
     cursor: pointer;
 }
+
+.caja-output {
+    height: 600px;
+    margin-left: 180px;
+    width: 340px;
+    border-radius: 32px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#error {
+    text-align: center;
+}
+
+.Mensaje-error h2 {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.Mensaje-error {
+    margin: 100px 0;
+}
+
+#resultado {
+    text-align: center;
+}
+
+.output-resultado {
+    font-size: 32px;
+    width: 300px;
+    height: 410px;
+    background: transparent;
+    border: none;
+    outline: none;
+    display: inline-block;
+    font-family: inherit;
+    resize: none;
+}
+
+.copiar {
+    width: 230px;
+    padding: 15px 0;
+    font-size: 16px;
+    color: var(--main-bg-color);
+    border: 1px solid var(--main-bg-color);
+    border-radius: 24px;
+    background: #D8DFE8;
+    cursor: pointer;
+    margin-top: 110px;
+}
+
+#vistaError img {
+    margin-top: 40px;
+}
