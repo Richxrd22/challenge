@@ -14,3 +14,65 @@ header img {
     margin-left: 40px;
     margin-top: 40px;
 }
+
+.contenedor {
+    display: flex;
+}
+
+.caja-input {
+    width: 700px;
+    margin-top: 77px;
+    margin-left: 240px;
+}
+
+.input-encriptar {
+    font-size: 32px;
+    width: 100%;
+    color: darkblue;
+    border: none;
+    outline: none;
+    display: inline-block;
+    font-family: inherit;
+    resize: none;
+    height: 450px;
+}
+
+.input-encriptar::placeholder {
+    color: var(--main-bg-color);
+}
+
+.texto-aviso {
+    box-sizing: border-box;
+    display: table-cell;
+}
+
+.texto-aviso img {
+    margin-right: 5px;
+}
+
+.option-row {
+    margin: 10px 0;
+}
+
+.encriptar {
+    width: 230px;
+    padding: 15px 0;
+    font-size: 16px;
+    color: #fff;
+    background: var(--main-bg-color);
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    margin-right: 30px;
+}
+
+.desencriptar {
+    width: 230px;
+    padding: 15px 0;
+    font-size: 16px;
+    color: var(--main-bg-color);
+    border: 1px solid var(--main-bg-color);
+    border-radius: 24px;
+    background: #D8DFE8;
+    cursor: pointer;
+}
