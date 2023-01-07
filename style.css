@@ -1,134 +1,242 @@
 body {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 :root {
-    --main-bg-color: #0A3871;
+  --main-bg-color: #0A3871;
 }
 
 header {
-    display: inline-block;
+  display: inline-block;
 }
 
 header img {
-    margin-left: 40px;
-    margin-top: 40px;
+  margin-left: 40px;
+  margin-top: 40px;
 }
 
 .contenedor {
-    display: flex;
+  display: flex;
 }
 
 .caja-input {
-    width: 700px;
-    margin-top: 77px;
-    margin-left: 240px;
+  width: 700px;
+  margin-top: 77px;
+  margin-left: 240px;
 }
 
 .input-encriptar {
-    font-size: 32px;
-    width: 100%;
-    color: darkblue;
-    border: none;
-    outline: none;
-    display: inline-block;
-    font-family: inherit;
-    resize: none;
-    height: 450px;
+  font-size: 32px;
+  width: 100%;
+  color: darkblue;
+  border: none;
+  outline: none;
+  display: inline-block;
+  font-family: inherit;
+  resize: none;
+  height: 450px;
 }
 
 .input-encriptar::placeholder {
-    color: var(--main-bg-color);
+  color: var(--main-bg-color);
 }
 
 .texto-aviso {
-    box-sizing: border-box;
-    display: table-cell;
+  box-sizing: border-box;
+  display: table-cell;
 }
 
 .texto-aviso img {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .option-row {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 .encriptar {
-    width: 230px;
-    padding: 15px 0;
-    font-size: 16px;
-    color: #fff;
-    background: var(--main-bg-color);
-    border: none;
-    border-radius: 24px;
-    cursor: pointer;
-    margin-right: 30px;
+  width: 230px;
+  padding: 15px 0;
+  font-size: 16px;
+  color: #fff;
+  background: var(--main-bg-color);
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+  margin-right: 30px;
 }
 
 .desencriptar {
-    width: 230px;
-    padding: 15px 0;
-    font-size: 16px;
-    color: var(--main-bg-color);
-    border: 1px solid var(--main-bg-color);
-    border-radius: 24px;
-    background: #D8DFE8;
-    cursor: pointer;
+  width: 230px;
+  padding: 15px 0;
+  font-size: 16px;
+  color: var(--main-bg-color);
+  border: 1px solid var(--main-bg-color);
+  border-radius: 24px;
+  background: #D8DFE8;
+  cursor: pointer;
 }
 
 .caja-output {
-    height: 600px;
-    margin-left: 180px;
-    width: 340px;
-    border-radius: 32px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    padding-top: 20px;
-    text-align: center;
+  height: 600px;
+  margin-left: 180px;
+  width: 340px;
+  border-radius: 32px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  padding-top: 20px;
+  text-align: center;
 }
 
 #error {
-    text-align: center;
+  text-align: center;
 }
 
 .Mensaje-error h2 {
-    font-weight: bold;
-    font-size: 25px;
-    margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 5px;
 }
 
 .Mensaje-error {
-    margin: 100px 0;
+  margin: 100px 0;
 }
 
 #resultado {
-    text-align: center;
+  text-align: center;
 }
 
 .output-resultado {
-    font-size: 32px;
-    width: 300px;
-    height: 410px;
-    background: transparent;
-    border: none;
-    outline: none;
-    display: inline-block;
-    font-family: inherit;
-    resize: none;
+  font-size: 32px;
+  width: 300px;
+  height: 410px;
+  background: transparent;
+  border: none;
+  outline: none;
+  display: inline-block;
+  font-family: inherit;
+  resize: none;
 }
 
 .copiar {
-    width: 230px;
-    padding: 15px 0;
-    font-size: 16px;
-    color: var(--main-bg-color);
-    border: 1px solid var(--main-bg-color);
-    border-radius: 24px;
-    background: #D8DFE8;
-    cursor: pointer;
-    margin-top: 110px;
+  width: 230px;
+  padding: 15px 0;
+  font-size: 16px;
+  color: var(--main-bg-color);
+  border: 1px solid var(--main-bg-color);
+  border-radius: 24px;
+  background: #D8DFE8;
+  cursor: pointer;
+  margin-top: 110px;
 }
 
 #vistaError img {
-    margin-top: 40px;
+  margin-top: 40px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .caja-input {
+    margin-top: 100px;
+    margin-left: 50px;
+    width: auto;
+  }
+
+  .input-encriptar {
+    font-size: 40px;
+    height: 700px;
+    width: 660px;
+  }
+
+  .encriptar,
+  .desencriptar {
+    width: 332px;
+    height: 67px;
+    font-size: 19px;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+  }
+
+  .encriptar {
+    margin-right: 12px;
+  }
+
+  header img {
+    margin-left: 0;
+    margin-top: 80px;
+  }
+
+  .texto-aviso {
+    padding: 40px 0 0 0;
+    font-size: 18px;
+  }
+
+  .option-row {
+    width: 688px;
+    height: 67px;
+  }
+
+  #vistaError img {
+    display: none;
+  }
+
+  .Mensaje-error h2 {
+    font-weight: bolder;
+    font-size: 29px;
+    padding-top: 25px;
+  }
+
+  .Mensaje-error p {
+    font-size: 24px;
+    padding-bottom: 30px;
+  }
+
+  .Mensaje-error {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .caja-output {
+    margin-left: 35px;
+    height: auto;
+    width: 688px;
+    padding-top: 0;
+  }
+
+  #vistaResultado {
+    width: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+  }
+
+  .output-resultado {
+    max-height: 180px;
+    display: block;
+    width: 624px;
+    padding: 37px;
+  }
+
+  .copiar {
+    background: white;
+    margin: 0;
+    height: 67px;
+    width: 624px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 19px;
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+  }
+
 }
