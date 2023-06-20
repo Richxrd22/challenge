@@ -79,12 +79,13 @@ header img {
 
 .caja-output {
   height: 600px;
-  margin-left: 180px;
+  margin-left: 80px;
+  margin-right: 80px;
   width: 340px;
   border-radius: 32px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-  padding-top: 20px;
   text-align: center;
+  box-sixing:border-box;
 }
 
 #error {
